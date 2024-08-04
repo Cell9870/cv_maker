@@ -16,8 +16,10 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{multirow}
 
-
+\graphicspath{ {../} }
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -74,24 +76,26 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
   %\textbf{\href{http://devopsguys.in//}{\Large Firstname Lastname}} & Email :  \href{mailto:cellschool2020@gmail.com}{cellschool2020@gmail.com}\\
-  \textbf{\Large Fernandez, Celso Rafael de los Santos} & Email :  \href{mailto:cellschool2020@gmail.com}{cellschool2020@gmail.com}\\
+  \hspace{1em} \multirow{1}{*}{\fbox{\includegraphics[scale=0.09]{Foto Perfil 1 - recortada.jpeg}}}
+  & \textbf{\Large Fernandez, Celso Rafael de los Santos} \\ \\
+  & Email :  \href{mailto:cellschool2020@gmail.com}{cellschool2020@gmail.com} \\ \\
+  & Teléfono :  (+54) 2664 375249 \\ \\
+  & DNI : 43.840.433 \\ \\
+  & Fecha de Nacimiento : 01/12/2001 \\ \\
   %\href{https://www.linkedin.com/in/rohit-ghumare/}{LinkedIn |}
   %\href{https://ghumare64.medium.com/}{Medium |}
   %\href{https://github.com/rohitg00/}{Github}
-  & Teléfono :  (+54) 2664 375249 \\
-  & DNI : 43.840.433 \\
-  & Fecha de Nacimiento : 01/12/2001
 \end{tabular*}
 
 %-----------RESUMEN PROFESIONAL---------------
 \section{Resumen Profesional}
-  Estudiante universitario de Ing. en Informática, estando ya en el último año de la carrera, 
-  con experiencia en varios lenguajes y frameworks, he participado competentemente en diversos proyectos grupales 
-  e individuales relacionados al desarrollo de software y análisis de datos. \\
-  Busco experiencias y oportunidades en el mundo laboral en donde aplicar mis habilidades y desarrollarme
-  como Ingeniero Informático.
+Estudiante universitario de Ing. en Informática, actualmente en el último año de la carrera, 
+con experiencia en múltiples lenguajes y frameworks. He contribuido de manera efectiva en diversos proyectos grupales 
+e individuales enfocados en desarrollo de software y análisis de datos. \\
+Busco experiencias y oportunidades en el mundo laboral en donde aplicar mis habilidades y continuar mi desarrollo
+profesional como Ingeniero Informático.
   
   
 %-----------EDUCATION-----------------
@@ -101,8 +105,8 @@
     %  {Your Bsc/Msc University/College}{City, Country}
     %  {(Degree, E.g: B.E in Computer Engineering);  GPA: 10/10 }{Start year - End year}
     \resumeSubheading
-      {Universidad Nacional de San Luis}{San Luis, San Luis, Argentina}
-      {(Ingeniería en Informática);  Promedio General (Hasta el momento): 7.89 }{2020 {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}} Actualidad}
+      {Universidad Nacional de San Luis : (Ingeniería en Informática)}{San Luis, San Luis, Argentina}
+      {Promedio General: 7.94. Avance en la Carrera: 84.09\% (37 Aprobadas)}{2020 {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}} Actualidad}
     \resumeSubheading
       {Instituto ``San José''}{Quines, San Luis, Argentina}
       {(Bachiller en Cs. Sociales);  Promedio General: 9.55 }{ Egreso en 2019}
